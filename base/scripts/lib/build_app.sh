@@ -38,7 +38,7 @@ node -p process.versions
 
 echo "=> Executing NPM install within Bundle"
 cd $BUNDLE_DIR/bundle/programs/server/
-npm i
+npm i --unsafe-perm
 
 echo "=> Moving bundle"
 mv $BUNDLE_DIR/bundle /built_app
